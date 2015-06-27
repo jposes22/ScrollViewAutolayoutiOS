@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEO-Gi-4tV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="GdX-FV-jbR"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjY-Qr-PzO">
+                                <rect key="frame" x="0.0" y="76" width="600" height="524"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MC8-C1-mPU">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="719"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-RO-MF3">
+                                                <rect key="frame" x="279" y="8" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-Mb-zel">
+                                                <rect key="frame" x="8" y="495" width="572" height="224"/>
+                                                <mutableString key="text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dt-cX-vb6">
+                                                <rect key="frame" x="550" y="225" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="pQe-RO-MF3" secondAttribute="centerX" id="Bcz-pX-Z41"/>
+                                            <constraint firstItem="cxW-Mb-zel" firstAttribute="top" secondItem="MC8-C1-mPU" secondAttribute="top" constant="495" id="I7F-Sh-DwA"/>
+                                            <constraint firstItem="0Dt-cX-vb6" firstAttribute="top" secondItem="MC8-C1-mPU" secondAttribute="top" constant="225" id="MUH-5E-HMd"/>
+                                            <constraint firstAttribute="bottom" secondItem="cxW-Mb-zel" secondAttribute="bottom" id="NpA-yl-Bny"/>
+                                            <constraint firstAttribute="height" constant="524" id="Tcm-Ka-GmU"/>
+                                            <constraint firstAttribute="trailing" secondItem="cxW-Mb-zel" secondAttribute="trailing" constant="20" symbolic="YES" id="Xpe-uH-96L"/>
+                                            <constraint firstItem="cxW-Mb-zel" firstAttribute="leading" secondItem="MC8-C1-mPU" secondAttribute="leading" constant="8" id="nUF-QN-c3p"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Dt-cX-vb6" secondAttribute="trailing" constant="8" id="pXs-XC-fby"/>
+                                            <constraint firstItem="pQe-RO-MF3" firstAttribute="top" secondItem="MC8-C1-mPU" secondAttribute="top" constant="8" id="zhz-K3-rxI"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Tcm-Ka-GmU"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MC8-C1-mPU" secondAttribute="bottom" id="T4v-p7-WXp"/>
+                                    <constraint firstAttribute="trailing" secondItem="MC8-C1-mPU" secondAttribute="trailing" id="aYK-cE-lV2"/>
+                                    <constraint firstItem="MC8-C1-mPU" firstAttribute="top" secondItem="kjY-Qr-PzO" secondAttribute="top" id="fEp-jH-OWS"/>
+                                    <constraint firstItem="MC8-C1-mPU" firstAttribute="leading" secondItem="kjY-Qr-PzO" secondAttribute="leading" id="hyt-sU-cc9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EEO-Gi-4tV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="2SW-kW-Wez"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kjY-Qr-PzO" secondAttribute="bottom" id="AtU-ow-zd2"/>
+                            <constraint firstItem="kjY-Qr-PzO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="BFf-Sy-tfv"/>
+                            <constraint firstItem="kjY-Qr-PzO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="Fx3-3P-EeH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kjY-Qr-PzO" secondAttribute="trailing" constant="-16" id="GTu-NW-dlZ"/>
+                            <constraint firstItem="EEO-Gi-4tV" firstAttribute="width" secondItem="MC8-C1-mPU" secondAttribute="width" id="iJK-eR-G9s"/>
+                            <constraint firstItem="EEO-Gi-4tV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ofE-Pw-GTg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EEO-Gi-4tV" secondAttribute="trailing" constant="-16" id="qKI-QC-IK0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
